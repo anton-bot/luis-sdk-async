@@ -1,0 +1,39 @@
+{
+  "name": "luis-sdk-async",
+  "version": "1.0.0",
+  "description": "A wrapper for Microsoft's `luis-sdk` package that uses async-await instead of callbacks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catcher-in-the-try/luis-sdk-async.git"
+  },
+  "keywords": [
+    "luis",
+    "microsoft",
+    "luis-sdk",
+    "language",
+    "understanding",
+    "intelligent",
+    "system",
+    "nlp",
+    "nlu",
+    "ms",
+    "cognitive",
+    "cognitive-services",
+    "microsoft-cognitive-services",
+    "microsoft-luis",
+    "node-cognitive-services"
+  ],
+  "author": "Anton Ivanov <anton@ivanov.hk>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/catcher-in-the-try/luis-sdk-async/issues"
+  },
+  "homepage": "https://github.com/catcher-in-the-try/luis-sdk-async#readme",
+  "dependencies": {
+    "luis-sdk": "^1.0.1"
+  }
+}
