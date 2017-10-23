@@ -25,7 +25,12 @@
     "cognitive-services",
     "microsoft-cognitive-services",
     "microsoft-luis",
-    "node-cognitive-services"
+    "node-cognitive-services",
+	"botframework",
+	"botbuilder",
+	"microsoft bot framework",
+	"bots",
+	"bot"
   ],
   "author": "Anton Ivanov <anton@ivanov.hk>",
   "license": "Unlicense",

@@ -16,16 +16,21 @@ class LuisAsync {
    *    luis.ai.
    * @param {string} appKey - The LUIS subscription key that can be obtained
    *    from Azure Portal.
+   * @param {string} [domain] - The LUIS server's hostname. Default is
+   *    'westus.api.cognitive.microsoft.com' (West US).
    * @param {boolean} [verbose] - Optional verbosity parameter. Leave default,
    *    which is `true`.
    */
-  constructor(appId, appKey, verbose = true) {
+  constructor(appId, appKey,
+    domain = 'westus.api.cognitive.microsoft.com',
+    verbose = true) {
     // Create a new client using Microsoft's non-async luis-sdk package:
-    this.luis = new Luis({ appId, appKey, verbose });
+    this.luis = new Luis({ appId, appKey, domain, verbose });
 
     // Just in case, save all the input params:
     this.appId = appId;
     this.appKey = appKey;
+    this.domain = domain;
     this.verbose = verbose;
   }
 
@@ -123,4 +128,4 @@ class LuisAsync {
   }
 }
 
-module.expors = LuisAsync;
+module.exports = LuisAsync;
